@@ -3,24 +3,6 @@
 A custom version of picocss for my projects
 [Original framework](https://picocss.com/)  (Built at v2.0.6)
 ## How to build (on Windows):
-```
-npm install -g sass
-```
-```
-mkdir build-folder 
-cd build-folder
-git clone https://github.com/picocss/pico.git
-move pico\scss .\
-rm -Force pico
-git clone https://github.com/xbvuno/bv-pico-css.git
-move bv-pico-css\* scss
-sass ./scss/main.scss:dist/bvuno-pico.css --watch
-```
-```
-cd ..
-move build-folder\dist\bvuno-pico.css .\
-rm -Force build-folder
-```
 ### Explaination
 - Legend: 
 	 - '*':  **Optional**
@@ -48,4 +30,24 @@ rm -Force build-folder
 - If you just need the `.css` file, take it and delete all the rest
   	- `\build-folder> cd .. `**
   	- `\> move build-folder\dist\bvuno-pico.css .\` **
+ 
+
+```
+npm install -g sass
+```
+```
+mkdir build-folder 
+cd build-folder
+git clone https://github.com/picocss/pico.git
+move pico\scss .\
+rm -Force pico
+git clone https://github.com/xbvuno/bv-pico-css.git
+move bv-pico-css\* scss
+sass ./scss/main.scss:dist/bvuno-pico.css --watch
+```
+```
+cd ..
+move build-folder\dist\bvuno-pico.css .\
+rm -Force build-folder
+```
 	- `\> rm -Force build-folder` *
