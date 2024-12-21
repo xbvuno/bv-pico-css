@@ -1,0 +1,12 @@
+@use "pico" with (
+  $modules: (
+    "themes/default": false,
+  ),
+  $enable-semantic-container: true,
+  $enable-responsive-spacings: true,
+  $theme-color: "amber",
+  $css-var-prefix: "--bv-" 
+);
+
+// Importa il tuo tema personalizzato
+@use "bvthemes/default";

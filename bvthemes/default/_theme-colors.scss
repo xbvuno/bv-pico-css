@@ -1,0 +1,45 @@
+@use "sass:map";
+@use "../../colors" as *;
+@use "../../settings" as *;
+
+$_shift: 5;
+// Amber
+$amber-950: adjust-hue(#161003,$_shift);
+$amber-900: adjust-hue(#231a03,$_shift);
+$amber-850: adjust-hue(#312302,$_shift);
+$amber-800: adjust-hue(#3f2d00,$_shift);
+$amber-750: adjust-hue(#4d3700,$_shift);
+$amber-700: adjust-hue(#5b4200,$_shift);
+$amber-650: adjust-hue(#694d00,$_shift);
+$amber-600: adjust-hue(#785800,$_shift);
+$amber-550: adjust-hue(#876400,$_shift);
+$amber-500:adjust-hue( #977000,$_shift);
+$amber-450: adjust-hue(#a77c00,$_shift);
+$amber-400: adjust-hue(#b78800,$_shift);
+$amber-350: adjust-hue(#c79400,$_shift);
+$amber-300:adjust-hue( #d8a100,$_shift);
+$amber-250: adjust-hue(#e8ae01,$_shift);
+$amber-200: adjust-hue(#ffbf00,$_shift);
+$amber-150: adjust-hue(#fecc63,$_shift);
+$amber-100: adjust-hue(#fddea6,$_shift);
+$amber-50:adjust-hue( #fcefd9,$_shift);
+$amber: $amber-200;
+
+$color-mappings: (
+  "amber": (
+    "dark": (
+      "text-selection-color": rgba($amber-350, 0.1875),
+      "primary": $amber-350,
+      "primary-background": $amber-200,
+      "primary-underline": rgba($amber-350, 0.5),
+      "primary-hover": $amber-250,
+      "primary-hover-background": $amber-150,
+      "primary-focus": rgba($amber-350, 0.375),
+      "primary-inverse": $black,
+      "switch-thumb-box-shadow": 0 0 0.5rem rgba($black, 0.25),
+    ))
+);
+
+@function get($key, $mode: "light") {
+  @return map.get(map.get(map.get($color-mappings, $theme-color), $mode), $key);
+}

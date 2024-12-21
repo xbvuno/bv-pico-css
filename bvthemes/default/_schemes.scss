@@ -1,0 +1,15 @@
+@use "sass:map";
+@use "../../settings" as *;
+
+@use "dark";
+
+:root {
+  @include dark.theme;
+}
+
+#{$parent-selector} progress,
+#{$parent-selector} [type="checkbox"],
+#{$parent-selector} [type="radio"],
+#{$parent-selector} [type="range"] {
+  accent-color: var(#{$css-var-prefix}primary);
+}
