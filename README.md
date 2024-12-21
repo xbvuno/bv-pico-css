@@ -9,7 +9,7 @@ mkdir build-folder
 cd build-folder
 git clone https://github.com/picocss/pico.git
 move pico\scss .\
-rm pico
+rm -Force pico
 git clone https://github.com/xbvuno/bv-pico-css.git
 move bv-pico-css\* scss
 sass ./scss/main.scss:dist/bvuno-pico.css --watch
