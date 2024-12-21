@@ -34,7 +34,7 @@ sass ./scss/main.scss:dist/bvuno-pico.css --watch
 	- `\build-folder> git clone https://github.com/xbvuno/bv-pico-css.git`
 	- `\build-folder> move bv-pico-css\* scss`
 - Use Sass to compile in css and update it as you edit with `--watch`
-		`\build-folder> sass ./scss/main.scss:dist/bvuno-pico.css --watch`
+	- `\build-folder> sass ./scss/main.scss:dist/bvuno-pico.css --watch`
 - Edit the style as you want
 	- Follow [this guide](https://picocss.com/docs/sass)
 - You can find the output file in `/dist/` as `bvuno-pico.css`
