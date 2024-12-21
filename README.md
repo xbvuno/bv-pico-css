@@ -22,8 +22,8 @@ A custom version of picocss for my projects
 - Clone this repo and put the files in the `scss` folder
 	- `\build-folder> git clone https://github.com/xbvuno/bv-pico-css.git`
 	- `\build-folder> move bv-pico-css\* scss`
-- Use Sass to compile in css and update it as you edit with `--watch`
-	- `\build-folder> sass ./scss/main.scss:dist/bvuno-pico.css --watch`
+- Use Sass to compile in css and update it as you edit with `--watch` (`--style compressed` to get it compressed)
+	- `\build-folder> sass ./scss/main.scss:dist/bvuno-pico.css --watch --style compressed`
 - Edit the style as you want
 	- Follow [this guide](https://picocss.com/docs/sass)
 - You can find the output file in `/dist/` as `bvuno-pico.css`
@@ -43,7 +43,7 @@ move pico\scss .\
 rm -Force -Recurse pico
 git clone https://github.com/xbvuno/bv-pico-css.git
 move bv-pico-css\* scss
-sass ./scss/main.scss:dist/bvuno-pico.css
+sass ./scss/main.scss:dist/bvuno-pico.css --style compressed
 cd ..
 move build-folder\dist\bvuno-pico.css .\
 rm -Force -Recurse build-folder
