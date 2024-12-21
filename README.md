@@ -41,13 +41,13 @@ cd build-folder
 git clone https://github.com/picocss/pico.git
 move pico\scss .\
 rm -Force pico
+A
 git clone https://github.com/xbvuno/bv-pico-css.git
 move bv-pico-css\* scss
-sass ./scss/main.scss:dist/bvuno-pico.css --watch
-```
-```
+sass ./scss/main.scss:dist/bvuno-pico.css
 cd ..
 move build-folder\dist\bvuno-pico.css .\
 rm -Force build-folder
+A
 ```
 	- `\> rm -Force build-folder` *
