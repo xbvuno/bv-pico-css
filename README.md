@@ -43,7 +43,10 @@ move pico\scss .\
 rm -Force -Recurse pico
 git clone https://github.com/xbvuno/bv-pico-css.git
 move bv-pico-css\* scss
-sass ./scss/main.scss:dist/bvuno-pico.css --style compressed
+sass ./scss/main.scss:dist/bvuno-pico.css --style compressed --watch
+```
+
+```
 cd ..
 move build-folder\dist\bvuno-pico.css .\
 rm -Force -Recurse build-folder
